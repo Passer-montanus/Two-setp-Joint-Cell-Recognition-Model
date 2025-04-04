@@ -1,0 +1,1 @@
+yolo predict model=weights/yolov8n_best.pt source=ultralytics/assets/bus.jpg save_txt=True
