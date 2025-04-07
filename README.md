@@ -33,8 +33,6 @@ The **Classify** module is designed to categorize normal cells into specific typ
   - High accuracy in distinguishing between normal cell types.
   - Adaptable to diverse cytological datasets.
 
-For more details, visit the [Classify module page](./Classify/README.md).
-
 ---
 
 ## Conclusion
