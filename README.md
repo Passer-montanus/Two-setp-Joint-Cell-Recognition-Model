@@ -13,7 +13,7 @@ By jointly deploying these models, our approach reduces missed diagnoses and pro
 
 ## Modules
 
-### [Recognize](./Recognize/Improvement_Effects.md)
+### [Recognize](./Recognize/README.md)
 The **Recognize** module focuses on detecting abnormal cells in cytological images. It leverages the improved YOLOv8 model with the OREPA module to enhance feature extraction and spatial information utilization. This module is particularly effective in identifying atypical cells with high sensitivity, making it suitable for resource-constrained environments.
 
 - **Key Features**:
