@@ -1,35 +1,35 @@
-细胞分类模型
+Cell Classification Models
 ===========================
 
-## 简介
-本项目提供基于深度学习的细胞分类模型，支持以下骨干网络：
+## Introduction
+This project provides deep learning-based cell classification models, supporting the following backbones:
 - DaViT
 - MobileViT
 - Res2Net
 - VGG
 - Vision Transformer
 
-通过 `tools/single_test.py` 和 `tools/muti_test.py`，可以对经过识别分割处理的正常细胞图像进行分类。
+You can classify normal cell images, which have been preprocessed through recognition and segmentation, using `tools/single_test.py` and `tools/muti_test.py`.
 
 ---
 
-### 单张图片分类
-下载所需的预训练权重至 `datas` 文件夹下，并运行以下命令：
+### Single Image Classification
+Download the required pretrained weights to the `datas` folder and run the following command:
 ```bash
 python tools/single_test.py datas/cell_image.png models/vgg/vgg16.py --classes-map datas/classes_map.txt
 ```
 
-### 批量图片分类
-将所有待分类的细胞图像放入同一文件夹中，并运行以下命令：
+### Batch Image Classification
+Place all the cell images to be classified in the same folder and run the following command:
 ```bash
 python tools/muti_test.py datas/cell_images/ models/res2net/res2net50.py --classes-map datas/classes_map.txt
 ```
 
 ---
 
-## 支持的模型与预训练权重
+## Supported Models and Pretrained Weights
 
-| 模型 | 权重 |
+| Model | Weights |
 | :---: | :---: |
 | **DaViT** | [DaViT-S](https://download.openmmlab.com/mmclassification/v0/davit/davit-small_3rdparty_in1k_20221116-51a849a6.pth)|
 | **MobileViT** | [MobileViT-Small](https://download.openmmlab.com/mmclassification/v0/mobilevit/mobilevit-small_3rdparty_in1k_20221018-cb4f741c.pth) |
@@ -39,7 +39,7 @@ python tools/muti_test.py datas/cell_images/ models/res2net/res2net50.py --class
 
 ---
 
-## 参考
+## Reference
 ```
 @repo{2020mmclassification,
     title={OpenMMLab's Image Classification Toolbox and Benchmark},
